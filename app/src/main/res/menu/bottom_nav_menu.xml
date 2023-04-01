@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/information_Fragment"
+        android:icon="@drawable/ic_information_frg"
+        android:title="@string/btn_information" />
+    <item
+        android:id="@+id/list_Fragment"
+        android:icon="@drawable/ic_list_frg"
+        android:title="@string/btn_list" />
+    <item
+        android:id="@+id/compatibility_Fragment"
+        android:icon="@drawable/ic_compatibility_frg"
+        android:title="@string/btn_compatibility" />
+</menu>

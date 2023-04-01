@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">MayTheStarsBeWithYou</string>
+
+    <!-- Bottom NAV Bar-->
+    <string name="btn_compatibility">Compatibility</string>
+    <string name="btn_information">Information</string>
+    <string name="btn_list">List</string>
+
+    <!-- Compatibility FRG -->
+    <string name="tit_compatibility_frg"> Compatibility Fragment</string>
+
+    <!-- Information FRG -->
+    <string name="tit_information_frg"> Information Fragment</string>
+
+    <!-- List FRG -->
+    <string name="tit_list_frg"> List Fragment</string>
+
 </resources>

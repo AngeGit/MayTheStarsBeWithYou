@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/list_Fragment">
+    <!--El id del fragment tiene que ser igual al id del item del bottom_nav_menu-->
+    <fragment
+        android:id="@+id/compatibility_Fragment"
+        android:name="com.jetpackcompose.maythestarsbewithyou.ui.compatibility.CompatibilityFragment"
+        android:label="fragment_compatibility"
+        tools:layout="@layout/fragment_compatibility" />
+    <fragment
+        android:id="@+id/information_Fragment"
+        android:name="com.jetpackcompose.maythestarsbewithyou.ui.information.InformationFragment"
+        android:label="fragment_information"
+        tools:layout="@layout/fragment_information" />
+    <fragment
+        android:id="@+id/list_Fragment"
+        android:name="com.jetpackcompose.maythestarsbewithyou.ui.list.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" />
+</navigation>
