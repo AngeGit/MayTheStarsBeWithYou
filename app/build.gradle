@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.jetpackcompose.maythestarsbewithyou'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.jetpackcompose.maythestarsbewithyou"
         minSdk 24
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -38,6 +38,20 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    //region Navigation Component
+        // Kotlin
+    implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
+    implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
+        // Testing Navigation
+    androidTestImplementation("androidx.navigation:navigation-testing:2.5.3")
+        // Jetpack Compose Integration
+    //implementation("androidx.navigation:navigation-compose:$nav_version")
+    //endregion Navigation Component
+
+
+
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
