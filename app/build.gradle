@@ -32,6 +32,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    viewBinding{
+        enabled=true
+    }
 }
 
 dependencies {
@@ -50,14 +53,16 @@ dependencies {
     kapt 'com.google.dagger:hilt-android-compiler:2.44'
     //endregion DI
     //region Navigation Component
-        // Kotlin
+    // Kotlin
     implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
     implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
-        // Testing Navigation
+    // Testing Navigation
     androidTestImplementation("androidx.navigation:navigation-testing:2.5.3")
-        // Jetpack Compose Integration
+    // Jetpack Compose Integration
     //implementation("androidx.navigation:navigation-compose:$nav_version")
     //endregion Navigation Component
+    //Animations
+    implementation "com.airbnb.android:lottie:6.0.0"
     //region Testing
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

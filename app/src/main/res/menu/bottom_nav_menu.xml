@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/information_Fragment"
-        android:icon="@drawable/ic_information_frg"
-        android:title="@string/btn_information" />
+        android:id="@+id/lucky_Fragment"
+        android:icon="@drawable/ic_lucky_fragment"
+        android:title="@string/btn_lucky" />
     <item
         android:id="@+id/list_Fragment"
         android:icon="@drawable/ic_list_frg"
