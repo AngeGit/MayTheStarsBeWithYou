@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/black"
-    tools:context=".ui.list.ListFragment">
+    android:gravity="center_horizontal"
+    tools:context=".ui.horoscope_list.ListFragment">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textColor="@color/purple_200"
-        android:text="@string/tit_list_frg" />
+        android:layout_height="wrap_content"
+        android:text="@string/tit_list_frg"
+        android:textColor="@color/purple_200" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/button_aries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tit_aries" />
+    <Button
+        android:id="@+id/button_taurus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tit_taurus" />
+    <Button
+        android:id="@+id/button_gemini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tit_gemini" />
+
+</LinearLayout>
