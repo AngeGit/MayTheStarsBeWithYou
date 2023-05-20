@@ -11,10 +11,10 @@
         android:label="fragment_compatibility"
         tools:layout="@layout/fragment_compatibility" />
     <fragment
-        android:id="@+id/information_Fragment"
-        android:name="com.jetpackcompose.maythestarsbewithyou.ui.information.InformationFragment"
-        android:label="fragment_information"
-        tools:layout="@layout/fragment_information" />
+        android:id="@+id/lucky_Fragment"
+        android:name="com.jetpackcompose.maythestarsbewithyou.ui.lucky_day.LuckyOfTheDayFragment"
+        android:label="fragment_lucky"
+        tools:layout="@layout/fragment_lucky_of_the_day" />
     <fragment
         android:id="@+id/list_Fragment"
         android:name="com.jetpackcompose.maythestarsbewithyou.ui.list.ListFragment"

@@ -22,7 +22,7 @@
       android:id="@+id/bottomNavView"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:padding="10dp"
+      android:padding="3dp"
       app:menu="@menu/bottom_nav_menu"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="parent"

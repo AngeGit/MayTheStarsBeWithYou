@@ -1,17 +1,54 @@
 <resources>
-    <string name="app_name">MayTheStarsBeWithYou</string>
+    <string name="app_name">MayDevStarsBeWithYou</string>
 
     <!-- Bottom NAV Bar-->
     <string name="btn_compatibility">Compatibility</string>
-    <string name="btn_information">Information</string>
+    <string name="btn_lucky">Luck of the day</string>
     <string name="btn_list">List</string>
 
     <!-- Compatibility FRG -->
     <string name="tit_compatibility_frg"> Compatibility Fragment</string>
 
-    <!-- Information FRG -->
-    <string name="tit_information_frg"> Information Fragment</string>
+    <!-- region Luck Of The Day FRG -->
+    <string name="tit_luck_frg"> Luck Of The Day Fragment</string>
+    <!-- region CardsNames -->
+    <string name="card0">The Fool</string>
+    <string name="card1">The Magician</string>
+    <string name="card2">The High Priestess</string>
+    <string name="card3">The Empress</string>
+    <string name="card4">Ten of Swords</string>
+    <string name="card5">The Hierophant</string>
+    <string name="card6">The Lovers</string>
+    <string name="card7">The Chariot</string>
+    <string name="card8">The Strength</string>
+    <string name="card9">The Hermit</string>
+    <string name="card10">The Wheel of Fortune</string>
+    <string name="card11">The Justice</string>
+    <string name="card12">Ace of Pentacles</string>
+    <string name="card13">The Death</string>
+    <string name="card14">The Temperance</string>
+    <string name="card15">The Devil</string>
+    <string name="card16">The Tower</string>
+    <string name="card17">The Star</string>
+    <string name="card18">The Moon</string>
+    <string name="card19">The Sun</string>
+    <string name="card20">The Judgement</string>
+    <string name="card21">The World</string>
+    <string name="card22">King of Wands</string>
+    <string name="card23">Queen of Wands</string>
+    <string name="card24">Page of Wands</string>
+    <string name="card25">King of Pentacles</string>
+    <string name="card26">Queen of Pentacles</string>
+    <string name="card27">King of Cups</string>
+    <string name="card28">Queen of Cups</string>
+    <string name="card29">King of Swords</string>
+    <string name="card30">Queen of Swords</string>
+    <string name="card31">Nine of Wands</string>
+    <string name="card32">Two of Pentacles</string>
+    <string name="card_reverse">Reverse</string>
 
+    <!-- endregion CardsNames -->
+    <!-- endregion Luck Of The Day FRG -->
     <!-- List FRG -->
     <string name="tit_list_frg"> List Fragment</string>
 
