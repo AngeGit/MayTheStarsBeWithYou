@@ -22,7 +22,7 @@ import kotlinx.coroutines.withContext
 class HoroscopeDetailActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailBinding
-    private val vm by viewModels<HoroscopeDetailViewModel> ()
+    private val vm by viewModels<HoroscopeDetailViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,32 +33,28 @@ class HoroscopeDetailActivity : AppCompatActivity() {
     }
 
     private fun initUI() {
-        lifecycleScope.launch {
-            repeatOnLifecycle(Lifecycle.State.STARTED){//Desde que empiece el ciclo de vida
-                vm.uiState.collect{uiState-> //Collecteamos  el uiState del VM
-                    when(uiState){
+        lifecycleScope.launch() {
+            repeatOnLifecycle(Lifecycle.State.STARTED) {//Desde que empiece el ciclo de vida
+                vm.uiState.collect { uiState -> //Collecteamos  el uiState del VM
+                    when (uiState) { //y dependiendo del tipo pintamos una pantalla u otra:
                         is DetailUIState.Error -> {
-                            //Mostrar dialog error
-                            binding.loading.isVisible= false
-                            withContext(Dispatchers.Main) {
-                                Toast.makeText(
-                                    this@HoroscopeDetailActivity,
-                                    uiState.msg,
-                                    Toast.LENGTH_LONG
-                                ).show()
-                            }
+                            binding.loading.isVisible = false
+                            Toast.makeText(
+                                this@HoroscopeDetailActivity,
+                                uiState.msg,
+                                Toast.LENGTH_LONG
+                            ).show()
                         }
-                        DetailUIState.Loading -> {
-                            //Mostrar Loading
-                            binding.loading.isVisible= true
-                        }
-                        is DetailUIState.Success -> {
-                            // Mostrar info
-                            binding.loading.isVisible= false
-                            withContext(Dispatchers.Main){
-                                Toast.makeText(this@HoroscopeDetailActivity, uiState.horoscopeResponse.description, Toast.LENGTH_LONG).show()
-                            }
+                        DetailUIState.Loading ->
+                            binding.loading.isVisible = true
 
+                        is DetailUIState.Success -> {
+                            binding.loading.isVisible = false
+                            Toast.makeText(
+                                this@HoroscopeDetailActivity,
+                                uiState.horoscopeModel.horoscope,
+                                Toast.LENGTH_LONG
+                            ).show()
                         }
                     }
                 }
@@ -66,7 +62,7 @@ class HoroscopeDetailActivity : AppCompatActivity() {
         }
     }
 
-    companion object{
-        fun create(context: Context) :Intent = Intent(context,HoroscopeDetailActivity::class.java)
+    companion object {
+        fun create(context: Context): Intent = Intent(context, HoroscopeDetailActivity::class.java)
     }
 }
