@@ -5,5 +5,5 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
-class ListViewModel @Inject constructor(): ViewModel() {
+class HoroscopeListViewModel @Inject constructor(): ViewModel() {
 }

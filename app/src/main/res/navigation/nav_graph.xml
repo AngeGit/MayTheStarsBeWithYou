@@ -17,7 +17,7 @@
         tools:layout="@layout/fragment_lucky_of_the_day" />
     <fragment
         android:id="@+id/list_Fragment"
-        android:name="com.jetpackcompose.maythestarsbewithyou.ui.horoscope_list.ListFragment"
+        android:name="com.jetpackcompose.maythestarsbewithyou.ui.horoscope_list.HoroscopeListFragment"
         android:label="fragment_list"
         tools:layout="@layout/fragment_list" />
 </navigation>

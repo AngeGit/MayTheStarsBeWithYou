@@ -7,7 +7,7 @@ import com.jetpackcompose.maythestarsbewithyou.databinding.ActivityDetailBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class DetailActivity : AppCompatActivity() {
+class HoroscopeDetailActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailBinding
     private val vm by viewModels<HoroscopeDetailViewModel> ()

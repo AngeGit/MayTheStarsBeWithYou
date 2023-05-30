@@ -14,9 +14,9 @@ import dagger.hilt.android.AndroidEntryPoint
  */
 
 @AndroidEntryPoint
-class ListFragment : Fragment() {
+class HoroscopeListFragment : Fragment() {
 
-    private val vm by viewModels<ListViewModel> ()
+    private val vm by viewModels<HoroscopeListViewModel> ()
 
     private var _binding: FragmentListBinding? = null
     private val binding get() =_binding!!
