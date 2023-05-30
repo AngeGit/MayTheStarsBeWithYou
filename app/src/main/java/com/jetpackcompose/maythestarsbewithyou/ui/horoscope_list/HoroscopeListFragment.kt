@@ -1,5 +1,6 @@
 package com.jetpackcompose.maythestarsbewithyou.ui.horoscope_list
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import com.jetpackcompose.maythestarsbewithyou.databinding.FragmentListBinding
+import com.jetpackcompose.maythestarsbewithyou.ui.horoscope_detail.HoroscopeDetailActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 /**
@@ -24,14 +26,17 @@ class HoroscopeListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.buttonAries.setOnClickListener{
-         //Abrir Detalle
+            openDetail()
         }
         binding.buttonTaurus.setOnClickListener{
-            //Abrir Detalle
+            openDetail()
         }
         binding.buttonGemini.setOnClickListener{
-            //Abrir Detalle
+            openDetail()
         }
+    }
+    private fun openDetail(){
+        startActivity(HoroscopeDetailActivity.create(requireContext()))
     }
 
     override fun onCreateView(
