@@ -49,7 +49,11 @@
 
     <!-- endregion CardsNames -->
     <!-- endregion Luck Of The Day FRG -->
-    <!-- List FRG -->
+    <!-- Zodiac List FRG -->
     <string name="tit_list_frg"> List Fragment</string>
-
+    <!--region Zodiac List -->
+    <string name="tit_aries">Aries</string>
+    <string name="tit_taurus">Taurus</string>
+    <string name="tit_gemini">Gemini</string>
+    <!--endregion Zodiac List -->
 </resources>
