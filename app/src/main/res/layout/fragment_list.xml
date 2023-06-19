@@ -1,33 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/black"
-    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".ui.horoscope_list.HoroscopeListFragment">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/tit_list_frg"
-        android:textColor="@color/purple_200" />
 
     <Button
         android:id="@+id/button_aries"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tit_aries" />
+        android:text="@string/tit_aries"
+        app:layout_constraintBottom_toTopOf="@+id/button_taurus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/button_taurus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tit_taurus" />
+        android:text="@string/tit_taurus"
+        app:layout_constraintBottom_toTopOf="@+id/button_gemini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_aries"/>
+
     <Button
         android:id="@+id/button_gemini"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tit_gemini" />
+        android:text="@string/tit_gemini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_taurus" />
 
-</LinearLayout>
+    <androidx.compose.ui.platform.ComposeView
+        android:id="@+id/listFragmentAnimationBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
